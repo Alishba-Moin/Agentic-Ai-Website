@@ -94,15 +94,13 @@ export function Pricing() {
                                     </li>
                                 ))}
                             </ul>
-                            <button
-              className={`mt-6 w-full py-2 rounded-lg text-white font-semibold transition-all ${
-                plan.name === "Professional"
-                  ? "bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
-                  : "border border-gray-700 hover:bg-gray-800"
-              }`}
-            >
-              Get Started
-            </button>
+                            <Button
+                      className={`mt-6 w-full py-2 rounded-lg text-white font-semibold transition-all ${
+                        plan.name === "Professional"
+                          ? "bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+                          : "border border-gray-700 hover:bg-gray-800"
+                      }`}> Get Started
+                    </Button>
                         </motion.div>
                     ))}
                 </div>
